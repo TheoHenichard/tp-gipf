@@ -8,3 +8,30 @@ node {
     }
   }
 }
+stages {
+
+        stage('compileJava') {
+            steps {
+              
+            }
+        }
+
+        stage('test') {
+            steps {
+                
+            }
+        }
+
+        stage('sonar') {
+            steps {
+                 
+            }
+        }
+
+        stage('jar') {
+            steps {
+
+            }
+        }
+
+    }
