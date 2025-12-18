@@ -7,10 +7,18 @@
  * user guide available at https://docs.gradle.org/3.2.1/userguide/tutorial_java_projects.html
  */
 
-
 plugins {
-    id 'org.liquibase.gradle' version '2.2.0'
+  id 'org.liquibase.gradle' version '2.2.0'
+  id "org.sonarqube" version "7.2.0.6526"
 }
+
+sonar {
+  properties {
+    property "sonar.projectKey", "tp-gipf"
+    property "sonar.projectName", "tp-gipf"
+  }
+}
+    
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 
